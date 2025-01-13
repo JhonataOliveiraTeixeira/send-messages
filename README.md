@@ -3,7 +3,7 @@ Script criado para aprofundar conhecimentos no consumo de APIs do chatPro
 # Pirmeiros Passos
 ✅1. É necessário ter o Pyhton 3 instalado;
 
-✅2.  Para rodar é necessário instalar a lib request como seguinte comando, "pip install request" no terminal;
+✅2.  Para rodar é necessário instalar a lib request com o seguinte comando, "pip install request" no terminal;
 
 # Funcionalidade
 🚀1. Disparar mensagens para clientes de uma base de dados, via WathsApp;
