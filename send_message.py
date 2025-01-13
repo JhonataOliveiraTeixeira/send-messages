@@ -6,7 +6,7 @@ def send_message(sessionId):
 
   payload = {
       "sessionId": sessionId,
-      "instanceId": enviroment_variables.instaceId,
+      "instanceId": enviroment_variables.instanceId,
       "provider": "whatsapp",
       "message": f'''
 '''

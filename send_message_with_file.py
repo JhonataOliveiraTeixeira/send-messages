@@ -6,7 +6,7 @@ def send_message_with_file(sessionId):
 
   payload = {
       "sessionId": sessionId,
-      "instanceId": enviroment_variables.instaceId,
+      "instanceId": enviroment_variables.instanceId,
       "url": enviroment_variables.fileURL,
       "provider": "whatsapp",
       "caption": f'''

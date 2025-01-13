@@ -45,8 +45,4 @@ def pega_telefone():
         if linha == 100 or linha == 200 or linha == 300:
             time.sleep(1800)
 
-
-
-        
-
 pega_telefone()

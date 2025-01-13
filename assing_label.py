@@ -6,7 +6,7 @@ def assing_label(leadID):
   url = "https://sparks.chatpro.com.br/leads/assignLabel"
 
   payload = {
-      "instanceId": enviroment_variables.instaceId,
+      "instanceId": enviroment_variables.instanceId,
       "leadId": leadID,
       "labelId": enviroment_variables.tagId
   }
