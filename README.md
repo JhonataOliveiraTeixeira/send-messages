@@ -11,4 +11,4 @@ Script criado para aprofundar conhecimentos no consumo de APIs do chatPro
 🚀2. Colocar etiquetas em planilha de contatos após o diparo da mensagem para os mesmos;
 
 # Considerações
-🎈1. Feito esclusivamente para estudo de possiveis implementações em outras liguagens.
+🎈1. Feito exclusivamente para estudo de possiveis implementações em outras liguagens.
