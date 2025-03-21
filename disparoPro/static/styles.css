@@ -1,0 +1,118 @@
+/* Estilo para o cabeçalho fixo */
+.header {
+  position: fixed; /* Fixa o cabeçalho no topo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(1, 88, 88); /* Cor de fundo */
+  padding: 10px 20px; /* Espaçamento interno */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+  z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+/* Container para o conteúdo do cabeçalho */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 95% ; /* Largura máxima */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  color: white;
+}
+
+/* Estilo para o botão de download */
+.buttonDownload {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background: rgb(0, 67, 67);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  width: 10rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  border: 2px;
+  cursor: pointer;
+}
+
+.buttonDownload:hover {
+  background: rgb(0, 48, 48);
+}
+
+/* Estilo para o conteúdo principal */
+.main-content {
+  padding-top: 8rem; /* Espaço para o cabeçalho fixo */
+  max-width: 100%;
+  height: 1000px;
+  margin: 0 auto;
+  background: rgb(255, 255, 245);
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.button-upload {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background: rgb(0, 67, 67);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  width: 10rem;
+  height: 2.5rem;
+  line-height: 1.5rem;
+  border: 2px;
+  cursor: pointer;
+}
+
+
+/* Estilo para o botão personalizado */
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: teal;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 2rem;
+}
+
+.custom-file-upload:hover {
+  background-color: rgb(0, 84, 84);
+}
+
+/* Estilo para o nome do arquivo */
+#file-name {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Estilo para o botão de envio */
+button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color:teal;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input{
+  height: 1.25rem;
+  padding: 3px;
+  border-radius: 8px;
+  border: 16px 0 #555;
+  padding-top: 14px;
+}
+
+button:hover {
+  background-color:  rgb(0, 84, 84);
+}

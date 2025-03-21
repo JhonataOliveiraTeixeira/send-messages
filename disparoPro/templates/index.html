@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <title>DisparoPro</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+    <h1>DisparoPro</h1>
+
+      <a href="/download-csv" class="buttonDownload">Baixar CSV</a>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+  <form method="POST" enctype="multipart/form-data" action="{{url_for('upload_file')}}">
+
+    <label>Digite o nome do disparo</label> <br>
+    <input type="text" name="instance"> <br>
+    <!-- Input de arquivo oculto -->
+    <input type="file" name="the_file" id="file-input" accept=".xlsx" hidden>
+    
+    <!-- Botão personalizado -->
+    <label for="file-input" class="custom-file-upload">
+      Escolher Arquivo
+    </label>
+    
+    <!-- Nome do arquivo selecionado -->
+    <span id="file-name">Nenhum arquivo selecionado</span>
+    
+    <button  type="submit">Enviar</button>
+  </form>
+
+  <script>
+    // Atualiza o nome do arquivo selecionado
+    document.getElementById('file-input').addEventListener('change', function() {
+      const fileName = this.files[0] ? this.files[0].name : "Nenhum arquivo selecionado";
+      document.getElementById('file-name').textContent = fileName;
+    });
+  </script>
+  </main>
+</body>
+</html>
